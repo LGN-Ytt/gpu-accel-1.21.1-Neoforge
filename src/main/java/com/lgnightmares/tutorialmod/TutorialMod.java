@@ -1,5 +1,6 @@
 package com.lgnightmares.tutorialmod;
 
+import com.lgnightmares.tutorialmod.worldgen.ModDensityFunctions;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -24,7 +25,9 @@ public class TutorialMod {
     public static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
 
-
+    private TutorialMod() {
+        ModDensityFunctions.register();
+    }
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public TutorialMod(IEventBus modEventBus, ModContainer modContainer) {
