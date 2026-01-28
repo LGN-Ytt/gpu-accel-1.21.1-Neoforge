@@ -1,4 +1,4 @@
-package com.lgnightmares.tutorialmod.platform;
+package com.lgnightmares.gpuaccel.platform;
 
 import java.io.InputStream;
 import java.nio.file.Files;

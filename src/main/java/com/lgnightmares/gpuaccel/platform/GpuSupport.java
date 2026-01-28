@@ -1,4 +1,4 @@
-package com.lgnightmares.tutorialmod.platform;
+package com.lgnightmares.gpuaccel.platform;
 
 import org.jocl.CL;
 
